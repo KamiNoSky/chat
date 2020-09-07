@@ -1,0 +1,13 @@
+
+<h1>Voici nos chats</h1>
+
+        {% for chat in chats %}
+
+            <div class="chat">
+
+                <p>{{ chat.name }}</p>
+                <a href="{{ path('chat_detail', {'id': chat.id }) }}"><img src="img/{{ chat.filename }}"></a>
+
+        {% endfor %}
+
+    </div>

@@ -1,0 +1,13 @@
+
+<h2> {{ chats.name }} </h2>
+
+<div>
+
+    <ul>
+        <label>Description :</label><li>{{ chats.description }}</li>
+        <br>
+        <label>Prix :</label><li>{{ chats.price }}</li>
+        <br>
+        <label>Date ajout :</label><li>{{ chats.dateCreated|date("Y-m-d") }}</li>
+    </ul>
+</div>
